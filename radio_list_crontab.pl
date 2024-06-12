@@ -1,6 +1,6 @@
 #!/usr/pkg/bin/perl
 
-# Time-stamp: <2022/03/06 03:14:11 (CST) daisuke>
+# Time-stamp: <2024/06/12 09:32:06 (UT+8) daisuke>
 
 use Getopt::Std;
 
@@ -13,7 +13,7 @@ use Getopt::Std;
 #$recnhk    = '/home/daisuke/bin/recnhkradio.pl';
 
 $file_program = sprintf ("%s/share/radio/radio_program_list.txt", $ENV{'HOME'});
-$file_command_radiko = sprintf ("%s/bin/radio_rec_radiko.pl", $ENV{'HOME'});
+#$file_command_radiko = sprintf ("%s/bin/radio_rec_radiko.pl", $ENV{'HOME'});
 $file_command_timefree = sprintf ("%s/bin/radio_rec_timefree.pl", $ENV{'HOME'});
 #$file_command_nhk = sprintf ("%s/bin/radio_rec_nhk.pl", $ENV{'HOME'});
 $file_command_nhk = sprintf ("%s/bin/radio_rec_nhk_now.py", $ENV{'HOME'});
@@ -23,10 +23,10 @@ unless (-e $file_program) {
     exit (0);
 }
 
-unless (-e $file_command_radiko) {
-    print STDERR "Cannot find the file \"$file_command_radiko\": $!\n";
-    exit (0);
-}
+#unless (-e $file_command_radiko) {
+#    print STDERR "Cannot find the file \"$file_command_radiko\": $!\n";
+#    exit (0);
+#}
 
 unless (-e $file_command_timefree) {
     print STDERR "Cannot find the file \"$file_command_timefree\": $!\n";
@@ -220,7 +220,7 @@ while (<FILE>) {
 			   $start_mm, $start_hh, $wday, 
 			   $file_command_nhk, $channel, 
 			   $duration, $program, $time_start);
-	} else {
+#	} else {
 #	    if ($region eq 'kanto') {
 #		foreach (@list_channel_kanto) {
 #		    if ($channel eq $_) {
@@ -257,11 +257,11 @@ while (<FILE>) {
 #			   $start_mm, $start_hh, $wday, 
 #			   $file_command_radiko, $channel, 
 #			   $duration, $program);
-	    ($command)
-		= sprintf ("%02d %02d * * %01d %-32s -c %-13s -t %3d -p %s",
-			   $start_mm, $start_hh, $wday, 
-			   $file_command_radiko, $channel, 
-			   $duration, $program);
+#	    ($command)
+#		= sprintf ("%02d %02d * * %01d %-32s -c %-13s -t %3d -p %s",
+#			   $start_mm, $start_hh, $wday, 
+#			   $file_command_radiko, $channel, 
+#			   $duration, $program);
 	}
 	
 	if ($print eq 'YES') {
