@@ -10,4 +10,4 @@ A set of scripts for racording of Japanese radio programs.
 - openvpn
 - perl5
 - python3
-- 
+
