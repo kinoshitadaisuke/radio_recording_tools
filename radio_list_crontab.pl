@@ -1,6 +1,6 @@
 #!/usr/pkg/bin/perl
 
-# Time-stamp: <2024/06/12 09:32:06 (UT+8) daisuke>
+# Time-stamp: <2024/06/12 09:36:36 (UT+8) daisuke>
 
 use Getopt::Std;
 
@@ -14,7 +14,7 @@ use Getopt::Std;
 
 $file_program = sprintf ("%s/share/radio/radio_program_list.txt", $ENV{'HOME'});
 #$file_command_radiko = sprintf ("%s/bin/radio_rec_radiko.pl", $ENV{'HOME'});
-$file_command_timefree = sprintf ("%s/bin/radio_rec_timefree.pl", $ENV{'HOME'});
+#$file_command_timefree = sprintf ("%s/bin/radio_rec_timefree.pl", $ENV{'HOME'});
 #$file_command_nhk = sprintf ("%s/bin/radio_rec_nhk.pl", $ENV{'HOME'});
 $file_command_nhk = sprintf ("%s/bin/radio_rec_nhk_now.py", $ENV{'HOME'});
 
@@ -28,10 +28,10 @@ unless (-e $file_program) {
 #    exit (0);
 #}
 
-unless (-e $file_command_timefree) {
-    print STDERR "Cannot find the file \"$file_command_timefree\": $!\n";
-    exit (0);
-}
+#unless (-e $file_command_timefree) {
+#    print STDERR "Cannot find the file \"$file_command_timefree\": $!\n";
+#    exit (0);
+#}
 
 unless (-e $file_command_nhk) {
     print STDERR "Cannot find the file \"$file_command_nhk\": $!\n";
