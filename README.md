@@ -7,6 +7,7 @@ This tool supports recording of NHK radio programs and also radio programs offer
 
 - base64
 - curl
+- ffmpeg6
 - gshuf command in coreutils
 - openvpn
 - perl5
