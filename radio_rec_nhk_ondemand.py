@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/python3.12
 
 #
-# Time-stamp: <2024/06/10 17:06:50 (UT+8) daisuke>
+# Time-stamp: <2024/08/16 21:25:30 (UT+8) daisuke>
 #
 
 ###########################################################################
@@ -131,7 +131,8 @@ default_programs = 'adventure'
 help_programs    = f'program names (default: {default_programs})'
 
 default_useragent \
-    = 'Mozilla/5.0 (X11; NetBSD amd64; rv:96.0) Gecko/20100101 Firefox/96.0'
+    = 'Mozilla/5.0 (X11; NetBSD amd64; rv:109.0) Gecko/20100101 Firefox/115.0'
+#    = 'Mozilla/5.0 (X11; NetBSD amd64; rv:96.0) Gecko/20100101 Firefox/96.0'
 help_useragent \
     = f'user agent for HTTP retrieval (default: {default_useragent})'
 
@@ -400,5 +401,11 @@ for program in list_programs:
             shutil.copy2 (file_aac_tmp, file_aac)
             if (verbosity):
                 print (f'#    file copy finished')
+
+        # deleting AAC files
+        list_aac_files = path_dir.glob ('*.aac')
+        for path_aac_files_for_delete in list_aac_files:
+            if (path_aac_files_for_delete.exists ()):
+                path_aac_files_for_delete.unlink ()
 
 ###########################################################################
