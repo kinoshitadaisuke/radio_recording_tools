@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/perl
 
 #
-# Time-stamp: <2020/12/05 14:14:14 (CST) daisuke>
+# Time-stamp: <2024/08/16 19:13:12 (UT+8) daisuke>
 #
 
 use Getopt::Std;
@@ -32,6 +32,11 @@ unless (-e $file_program) {
 $name = `$hostname -s`;
 if ($name =~ /^n\d+$/) {
     ($n) = ($name =~ /^n(\d+)$/);
+} elsif ($name =~ /^nb\d+$/) {
+    ($n) = ($name =~ /^nb(\d+)$/);
+    while ($n >= 10) {
+	$n -= 10;
+    }
 } else {
     $n = 0;
 }
