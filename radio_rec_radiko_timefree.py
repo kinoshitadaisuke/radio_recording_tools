@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/python3.12
 
 #
-# Time-stamp: <2024/06/10 16:40:03 (UT+8) daisuke>
+# Time-stamp: <2024/08/16 21:14:56 (UT+8) daisuke>
 #
 
 ###########################################################################
@@ -613,7 +613,8 @@ else:
 # fetching m3u file
 
 user_agent \
-    = 'Mozilla/5.0 (X11; NetBSD amd64; rv:91.0) Gecko/20100101 Firefox/91.0'
+    = 'Mozilla/5.0 (X11; NetBSD amd64; rv:109.0) Gecko/20100101 Firefox/115.0'
+#    = 'Mozilla/5.0 (X11; NetBSD amd64; rv:91.0) Gecko/20100101 Firefox/91.0'
 
 if (url_m3u):
     command_fetch_m3u = "%s %s --user-agent '%s' -o %s %s" \
@@ -738,3 +739,9 @@ if not ( ( path_aac.exists () ) and (size_old >= size_new) ):
         print ("#")
         print ("# Finished copying AAC file!")
         print ("#")
+
+# deleting AAC files
+list_aac_files = path_tmp.glob ('*.aac')
+for path_aac_for_delete in list_aac_files:
+    if (path_aac_for_delete.exists ()):
+        path_aac_for_delete.unlink ()
