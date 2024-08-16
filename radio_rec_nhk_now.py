@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/python3.12
 
 #
-# Time-stamp: <2024/06/10 16:41:29 (UT+8) daisuke>
+# Time-stamp: <2024/08/16 21:28:09 (UT+8) daisuke>
 #
 
 #
@@ -298,6 +298,12 @@ else:
     # copying file
     shutil.copy2 (file_aac_tmp, file_aac)
 
+# deleting AAC files
+list_aac_files = path_dir.glob ('*.aac')
+for path_aac_files_for_delete in list_aac_files:
+    if (path_aac_files_for_delete.exists ()):
+        path_aac_files_for_delete.unlink ()
+    
 # printing status
 if (verbosity):
     print (f'# finished recording radio program!')
