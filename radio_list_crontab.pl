@@ -1,6 +1,6 @@
 #!/usr/pkg/bin/perl
 
-# Time-stamp: <2024/06/12 09:36:36 (UT+8) daisuke>
+# Time-stamp: <2024/08/16 19:20:28 (UT+8) daisuke>
 
 use Getopt::Std;
 
@@ -130,7 +130,7 @@ sub OptionAnalysis {
     if ($opt_r) {
 	$region = $opt_r;
     } else {
-	$region = 'none';
+	$region = 'kanto';
     }
 
     unless ( ($region eq 'kanto') or ($region eq 'kansai') 
