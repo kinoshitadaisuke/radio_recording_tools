@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/perl
 
 #
-# Time-stamp: <2023/10/21 20:26:03 (CST) daisuke>
+# Time-stamp: <2024/08/17 19:08:16 (UT+8) daisuke>
 #
 
 #
@@ -12,7 +12,8 @@
 #$url_radio_index = 'https://140.115.9.192/~daisuke/radio/';
 #$url_radio_index = 'https://140.115.9.192/~daisuke/radio/thisweek.html';
 #$url_radio_index = 'https://140.115.9.56/~daisuke/radio/thisweek.html';
-$url_radio_index = 'https://140.115.9.56:8888/~daisuke/radio/thisweek.html';
+#$url_radio_index = 'https://140.115.9.56:8888/~daisuke/radio/thisweek.html';
+$url_radio_index = 'https://140.115.9.56:58888/~daisuke/radio/thisweek.html';
 
 #
 # directories
