@@ -1,14 +1,14 @@
 #!/usr/pkg/bin/perl
 
 #
-# Time-stamp: <2024/08/18 20:03:52 (UT+8) daisuke>
+# Time-stamp: <2024/08/18 20:23:36 (UT+8) daisuke>
 #
 
 #
 # parameters
 #
 $ip       = "a.b.c.d";
-$port     = 12345;
+$port     = "12345";
 $userdir  = "myname";
 $username = "abc";
 $password = "def";
@@ -16,8 +16,8 @@ $password = "def";
 #
 # URLs
 #
-$url_radio_index = printf ("https://%s:%s/~%s/radio/thisweek.html",
-			   $ip, $port, $userdir);
+$url_radio_index = sprintf ("https://%s:%s/~%s/radio/thisweek.html",
+			    $ip, $port, $userdir);
 
 #
 # directories
