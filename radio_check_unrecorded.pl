@@ -1,19 +1,23 @@
 #!/usr/pkg/bin/perl
 
 #
-# Time-stamp: <2024/08/17 19:08:16 (UT+8) daisuke>
+# Time-stamp: <2024/08/18 20:03:52 (UT+8) daisuke>
 #
+
+#
+# parameters
+#
+$ip       = "a.b.c.d";
+$port     = 12345;
+$userdir  = "myname";
+$username = "abc";
+$password = "def";
 
 #
 # URLs
 #
-#$url_radio_index = 'http://140.115.9.226/~daisuke/radio/';
-#$url_radio_index = 'http://140.115.9.192/~daisuke/radio/';
-#$url_radio_index = 'https://140.115.9.192/~daisuke/radio/';
-#$url_radio_index = 'https://140.115.9.192/~daisuke/radio/thisweek.html';
-#$url_radio_index = 'https://140.115.9.56/~daisuke/radio/thisweek.html';
-#$url_radio_index = 'https://140.115.9.56:8888/~daisuke/radio/thisweek.html';
-$url_radio_index = 'https://140.115.9.56:58888/~daisuke/radio/thisweek.html';
+$url_radio_index = printf ("https://%s:%s/~%s/radio/thisweek.html",
+			   $ip, $port, $userdir);
 
 #
 # directories
@@ -143,13 +147,10 @@ $sec_from_day_start = $hour * 3600.0 + $min * 60.0 + $sec;
 
 ###########################################################################
 
-#$command_fetch_radio_index = sprintf ("%s --insecure --output %s --user mhdf:tw32001taoyuan200308ncu %s", 
-#				      $curl, 
-#				      $file_radio_index, $url_radio_index);
-#$command_fetch_radio_index = sprintf ("%s --insecure --output %s --user d_command:32001s41006c %s",
-#				      $curl, $file_radio_index, $url_radio_index);
-$command_fetch_radio_index = sprintf ("%s --tlsv1.3 --insecure --output %s --user d_command:32001s41006c %s",
-				      $curl, $file_radio_index, $url_radio_index);
+$command_fetch_radio_index = sprintf ("%s --tlsv1.3 --insecure --output %s --user %s:%s %s",
+				      $curl, $file_radio_index,
+				      $username, $password,
+				      $url_radio_index);
 #print "$command_fetch_radio_index\n";
 system ("$command_fetch_radio_index");
 
