@@ -1,17 +1,18 @@
 #!/usr/pkg/bin/perl
 
 #
-# Time-stamp: <2024/08/18 20:23:36 (UT+8) daisuke>
+# Time-stamp: <2024/08/18 20:35:04 (UT+8) daisuke>
 #
 
 #
 # parameters
 #
-$ip       = "a.b.c.d";
-$port     = "12345";
-$userdir  = "myname";
-$username = "abc";
-$password = "def";
+$ip        = "a.b.c.d";
+$port      = "12345";
+$userdir   = "myname";
+$username  = "abc";
+$password  = "def";
+$useragent = "MyRadioRecordingTool";
 
 #
 # URLs
@@ -147,9 +148,10 @@ $sec_from_day_start = $hour * 3600.0 + $min * 60.0 + $sec;
 
 ###########################################################################
 
-$command_fetch_radio_index = sprintf ("%s --tlsv1.3 --insecure --output %s --user %s:%s %s",
+$command_fetch_radio_index = sprintf ("%s --tlsv1.3 --insecure --output %s --user %s:%s --user-agent %s %s",
 				      $curl, $file_radio_index,
 				      $username, $password,
+				      $useragent,
 				      $url_radio_index);
 #print "$command_fetch_radio_index\n";
 system ("$command_fetch_radio_index");
