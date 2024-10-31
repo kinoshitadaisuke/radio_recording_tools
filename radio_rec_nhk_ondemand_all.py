@@ -1,6 +1,6 @@
 #!/usr/pkg/bin/python3.12
 
-# Time-stamp: <2024/06/10 16:57:04 (UT+8) daisuke>
+# Time-stamp: <2024/11/01 00:13:30 (UT+8) daisuke>
 
 # importing random module
 import random
@@ -23,6 +23,7 @@ dic_programs = {
     'culture_showa': 'カルチャーラジオ　保阪正康が語る昭和人物史',
     'culture_sunday': 'カルチャーラジオ　日曜カルチャー',
     'earthradio': 'ちきゅうラジオ',
+    'fmcinemasounds': 'ＦＭシネマサウンズ',
     'gendaieigo': 'ニュースで学ぶ「現代英語」',
     'genichiro': '高橋源一郎の飛ぶ教室',
     'hoshizora': 'MISIA 星空のラジオ ～Sunday Sunset～',
