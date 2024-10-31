@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/python3.12
 
 #
-# Time-stamp: <2024/08/16 21:25:30 (UT+8) daisuke>
+# Time-stamp: <2024/11/01 00:12:40 (UT+8) daisuke>
 #
 
 ###########################################################################
@@ -76,6 +76,7 @@ dic_programs = {
     'culture_showa': 'カルチャーラジオ　保阪正康が語る昭和人物史',
     'culture_sunday': 'カルチャーラジオ　日曜カルチャー',
     'earthradio': 'ちきゅうラジオ',
+    'fmcinemasounds': 'ＦＭシネマサウンズ',
     'gendaieigo': 'ニュースで学ぶ「現代英語」',
     'genichiro': '高橋源一郎の飛ぶ教室',
     'hoshizora': 'MISIA 星空のラジオ ～Sunday Sunset～',
