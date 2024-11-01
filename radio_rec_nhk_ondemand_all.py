@@ -1,6 +1,6 @@
 #!/usr/pkg/bin/python3.12
 
-# Time-stamp: <2024/11/01 00:13:30 (UT+8) daisuke>
+# Time-stamp: <2024/11/01 08:49:56 (UT+8) daisuke>
 
 # importing random module
 import random
@@ -32,6 +32,7 @@ dic_programs = {
     'meisakuza': '新日曜名作座',
     'nemurenai': '眠れない貴女へ',
     'nhkjournal': 'NHKジャーナル',
+    'nhknewswebeasy': 'NHKやさしいことばニュース',
     'roudoku': '朗読',
     'roudokuworld': '朗読の世界',
     'theatre': 'ＦＭシアター',
