@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/python3.12
 
 #
-# Time-stamp: <2025/01/02 19:24:41 (UT+8) daisuke>
+# Time-stamp: <2025/01/03 10:03:22 (UT+8) daisuke>
 #
 
 ###########################################################################
@@ -81,7 +81,7 @@ dic_programs = {
     'genichiro': '高橋源一郎の飛ぶ教室',
     'hoshizora': 'MISIA 星空のラジオ ～Sunday Sunset～',
     'jikutabi': '音で訪ねる　ニッポン時空旅',
-    'kimitachi': '弘兼憲史の“俺たちはどう生きるか”',
+    'oretachi': '弘兼憲史の“俺たちはどう生きるか”',
     'learnjapanese': 'Ｌｅａｒｎ　Ｊａｐａｎｅｓｅ　ｆｒｏｍ　ｔｈｅ　Ｎｅｗｓ',
     'meisakuza': '新日曜名作座',
     'nemurenai': '眠れない貴女へ',
