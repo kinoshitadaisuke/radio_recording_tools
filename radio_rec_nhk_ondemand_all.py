@@ -1,6 +1,6 @@
 #!/usr/pkg/bin/python3.12
 
-# Time-stamp: <2025/01/03 10:03:31 (UT+8) daisuke>
+# Time-stamp: <2025/04/16 22:04:59 (UT+08:00) daisuke>
 
 # importing random module
 import random
@@ -14,7 +14,9 @@ command_ondemand = '/home/daisuke/bin/radio_rec_nhk_ondemand.py'
 # program names
 dic_programs = {
     'adventure': '青春アドベンチャー',
+    'announcer100yr': 'アナウンサー百年百話',
     'asianview': 'Asian View',
+    'broadcast100yr': '放送100年 保阪正康が語る昭和人物史',
     'culture_art': 'カルチャーラジオ　芸術その魅力',
     'culture_chinese': 'カルチャーラジオ　漢詩をよむ',
     'culture_history': 'カルチャーラジオ　歴史再発見',
@@ -28,7 +30,10 @@ dic_programs = {
     'genichiro': '高橋源一郎の飛ぶ教室',
     'hoshizora': 'MISIA 星空のラジオ ～Sunday Sunset～',
     'jikutabi': '音で訪ねる　ニッポン時空旅',
+    'kotenkyoshitsu': 'おしゃべりな古典教室',
+    'ohanashi': 'お話でてこい',
     'oretachi': '弘兼憲史の“俺たちはどう生きるか”',
+    'oto': '音の風景',
     'learnjapanese': 'Ｌｅａｒｎ　Ｊａｐａｎｅｓｅ　ｆｒｏｍ　ｔｈｅ　Ｎｅｗｓ',
     'meisakuza': '新日曜名作座',
     'nemurenai': '眠れない貴女へ',
