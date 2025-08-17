@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/python3.12
 
 #
-# Time-stamp: <2025/04/16 22:04:49 (UT+08:00) daisuke>
+# Time-stamp: <2025/08/17 19:23:48 (UT+08:00) daisuke>
 #
 
 ###########################################################################
@@ -94,6 +94,7 @@ dic_programs = {
     'nhknewswebeasy': 'NHKやさしいことばニュース',
     'roudoku': '朗読',
     'roudokuworld': '朗読の世界',
+    'sensonomukogawa': '高橋源一郎と読む「戦争の向こう側」',
     'theatre': 'ＦＭシアター',
     'weekendsunshine': 'ウィークエンドサンシャイン',
     'yamacafe': '石丸謙二郎の山カフェ',
