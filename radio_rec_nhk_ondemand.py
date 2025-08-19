@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/python3.12
 
 #
-# Time-stamp: <2025/08/17 19:23:48 (UT+08:00) daisuke>
+# Time-stamp: <2025/08/19 21:48:38 (UT+08:00) daisuke>
 #
 
 ###########################################################################
@@ -95,6 +95,7 @@ dic_programs = {
     'roudoku': '朗読',
     'roudokuworld': '朗読の世界',
     'sensonomukogawa': '高橋源一郎と読む「戦争の向こう側」',
+    'senzennonihon': 'ラジオテキストが教えてくれる戦前の日本',
     'theatre': 'ＦＭシアター',
     'weekendsunshine': 'ウィークエンドサンシャイン',
     'yamacafe': '石丸謙二郎の山カフェ',
