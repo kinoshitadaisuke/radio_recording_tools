@@ -1,15 +1,16 @@
 #!/usr/pkg/bin/perl
 
 #
-# Time-stamp: <2022/07/28 23:22:14 (CST) daisuke>
+# Time-stamp: <2026/01/27 13:35:25 (UT+08:00) daisuke>
 #
 
 #
 # programs
 #
-$csh   = '/bin/csh';
-$perl  = '/usr/pkg/bin/perl';
-$sleep = '/bin/sleep';
+$csh    = '/bin/csh';
+$perl   = '/usr/pkg/bin/perl';
+$python = '/usr/pkg/bin/python3'
+$sleep  = '/bin/sleep';
 
 #
 # parameters
@@ -23,7 +24,7 @@ $time_sleep = 1;
 #$recradiko = '/home/daisuke/bin/recradiko_timefree.pl';
 $file_program = sprintf ("%s/share/radio/radio_program_list.txt", $ENV{'HOME'});
 #$file_command_timefree = sprintf ("%s/bin/radio_rec_timefree.pl", $ENV{'HOME'});
-$file_command_timefree = sprintf ("%s/bin/radio_rec_radiko_timefree.py",
+$file_command_timefree = sprintf ("%s/bin/radio_rec_radiko_timefree_202601.py",
 				  $ENV{'HOME'});
 
 unless (-e $file_program) {
@@ -138,7 +139,7 @@ while (<FILE>) {
 		       $file_command_timefree, $channel, $num2wday{$wday}, 
 		       $start_hh, $start_mm, $end_hh, $end_mm, $program);
 
-	print "echo \"$perl $command\" | $csh\n";
+	print "echo \"$python $command\" | $csh\n";
 #	print "$sleep $time_sleep\n";
     }
 }
