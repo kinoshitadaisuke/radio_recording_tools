@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/perl
 
 #
-# Time-stamp: <2026/01/27 13:35:25 (UT+08:00) daisuke>
+# Time-stamp: <2026/01/27 13:37:15 (UT+08:00) daisuke>
 #
 
 #
@@ -9,7 +9,7 @@
 #
 $csh    = '/bin/csh';
 $perl   = '/usr/pkg/bin/perl';
-$python = '/usr/pkg/bin/python3'
+$python = '/usr/pkg/bin/python3';
 $sleep  = '/bin/sleep';
 
 #
