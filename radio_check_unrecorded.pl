@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/perl
 
 #
-# Time-stamp: <2024/08/18 20:35:04 (UT+8) daisuke>
+# Time-stamp: <2026/01/27 13:51:41 (UT+08:00) daisuke>
 #
 
 #
@@ -37,7 +37,7 @@ $file_radio_index = sprintf ("%s/thisweek.html", $dir_tmp);
 
 $file_program = sprintf ("%s/share/radio/radio_program_list.txt", $ENV{'HOME'});
 #$file_command_timefree = sprintf ("%s/bin/radio_rec_timefree.pl", $ENV{'HOME'});
-$file_command_timefree = sprintf ("%s/bin/radio_rec_radiko_timefree.py",
+$file_command_timefree = sprintf ("%s/bin/radio_rec_radiko_timefree_202601.py",
 				  $ENV{'HOME'});
 
 unless (-e $file_program) {
