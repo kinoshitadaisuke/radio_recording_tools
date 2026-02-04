@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/python3.12
 
 #
-# Time-stamp: <2026/01/29 07:58:55 (UT+08:00) daisuke>
+# Time-stamp: <2026/02/04 09:22:11 (UT+08:00) daisuke>
 #
 
 ######################################################################
@@ -615,7 +615,7 @@ if (verbosity):
 
 # fetch AAC file
 
-command_fetch_aac = f"{command_ffmpeg} {opt_ffmpeg_1} -headers 'X-Radiko-AuthToken: {authtoken}' -f hls -i '{url_playlist}?station_id={channel}&start_at={datetime_start}&ft={datetime_start}&end_at={datetime_end}&to={datetime_end}&preroll=0&l=15&lsid={request_id}&type=c' {opt_ffmpeg_2} {file_aac_tmp}"
+command_fetch_aac = f"{command_ffmpeg} {opt_ffmpeg_1} -headers 'X-Radiko-AuthToken: {authtoken}' -f hls -i '{url_playlist}?station_id={channel}&start_at={datetime_start}&ft={datetime_start}&end_at={datetime_end}&to={datetime_end}&preroll=0&l=15&lsid={request_id}&type=b' {opt_ffmpeg_2} {file_aac_tmp}"
 
 if (verbosity):
     print (f'#')
